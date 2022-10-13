@@ -106,4 +106,5 @@ button {
   position: absolute;
   width: 120px;
   height: 120px;
+  border: none;
 }
