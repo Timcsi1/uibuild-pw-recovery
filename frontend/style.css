@@ -9,16 +9,19 @@ h1 {
   color: #006837;
   display: flex;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 @media only screen and (max-width: 520px) {
   h1 {
     font-size: 24px;
   }
+  .text-container {
+    width: 100%;
+  }
 }
 
-div {
+.text-container {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -26,40 +29,81 @@ div {
   background-color: #f9c582;
   max-width: 520px;
   display: block;
+  justify-content: flex-start;
+  padding: auto;
   margin: auto;
   align-items: center;
+  height: 230px;
 }
+
+p1 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+p2 {
+  font-size: 16px;
+  font-weight: 500px;
+  font-style: italic;
+  text-align: inherit;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+form {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 520px) {
   div {
     height: fit-content;
     width: 100%;
   }
+}
 
-  input {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    max-width: 480px;
-    height: 64px;
-    color: #98a991;
-    bottom: 5px;
-    position: relative;
-    margin-left: 20px;
-  }
+input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 480px;
+  height: 64px;
+  bottom: 70px;
+  position: flex;
+  margin-left: 20px;
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
 
-  button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    color: #006837;
-    background-color: #f9c582;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    border-radius: 50%;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    width: 120px;
-    height: 120px;
-  }
+input::placeholder {
+  color: #98a991;
+}
+input:placeholder-shown {
+  border: none;
+  color: #98a991;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: #006837;
+  background-color: #f9c582;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 120px;
+  height: 120px;
 }

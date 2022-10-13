@@ -4,17 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This is FRONTEND</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>PASSWORD RECOVERY</h1>
-    <div>
-      Please write the answer of your security question into the following input
-      field and press Enter. Your security question is: What was your first
-      pet's name?
-      <input type="Write your first pet's name here..." />
+    <div id="root">
+      <h1>PASSWORD RECOVERY</h1>
+      <div class="text-container">
+        <p1>Please write the answer of your security question into the <br>following input
+			field and press Enter. <br> Your security question is:<br> 
+	  </p1>
+	  <p2>What was your first pet's name?</p2>
+        <div>
+          <form action>
+            <input class="input-field" type="text" id="fname" name="fname"
+            placeholder="Write your first pet's name here...">
+          </form>
+        </div>
+      </div>
     </div>
-    <button>?</button>
-  </body>
+</div>
+<div class="circle">
+	<button class="question">?</button>
+</div>
+</body>
 </html>
