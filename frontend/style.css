@@ -4,20 +4,25 @@ body {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: light;
   font-size: 36px;
   color: #006837;
   display: flex;
   justify-content: center;
+  margin-top: 200px;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
 }
 @media only screen and (max-width: 520px) {
+  .box {
+    height: fit-content;
+    width: 100%;
+  }
   h1 {
     font-size: 24px;
   }
@@ -33,7 +38,7 @@ main {
 .text-container {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: medium;
   color: #006837;
   background-color: #f9c582;
   max-width: 520px;
@@ -55,7 +60,7 @@ p {
 
 label {
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: medium;
   font-style: italic;
   text-align: inherit;
   padding-left: 20px;
@@ -69,7 +74,6 @@ form {
   width: 100%;
 }
 
-/*@media only screen and (max-width: 520px)*/
 .box {
   height: fit-content;
   width: 100%;
@@ -78,7 +82,7 @@ form {
 input {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: medium;
   max-width: 480px;
   height: 64px;
   margin-left: 20px;
